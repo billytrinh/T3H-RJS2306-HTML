@@ -1,0 +1,33 @@
+body{
+    font-family: 'Roboto', sans-serif
+}
+img{
+    max-width: 100%;
+}
+div{
+    width: calc(33% - 20px - 2px - 20px);
+    float: left;/* left right none*/
+    margin: 10px 10px 30px;
+    /*
+        margin-top:10px; 
+        margin-right:10px;
+        margin-bottom:10px;
+        margin-left:10px;
+    */
+    border: 1px solid red;
+    padding:10px;
+    /*
+        padding-top:10px;
+        padding-right:10px;
+        padding-bottom:10px;
+        padding-left:10px;
+    */
+
+    border-radius: 10px;
+
+}
+.dacbiet{
+    background-color: #ffe4c4;
+    border: 1px solid #ffa500;
+    margin-top: -10px;
+}

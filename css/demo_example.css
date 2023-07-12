@@ -1,0 +1,59 @@
+.block{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.block-top h1{ /*  cha con */
+   font-size: 40px;
+   color: #222222; 
+   text-align: center;
+}
+.block-top p{
+    font-size: 20px;
+    color: #222222;
+    text-align: center;
+    width: 640px;
+    margin: 0 auto;
+}
+.btn{
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.btn a{
+    color: #ffffff;
+    font-size: 16px;
+    padding: 6px 12px;
+    background-color: #8c8888;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn .btn-blue{
+    background-color: #007bff;   
+}
+
+.block-bottom{
+    background-color: #fafafa;
+    padding-top: 40px;
+}
+img{max-width: 100%;}
+.grid-container{
+    float: left;
+    width: 100%;
+    display: flex;
+}
+.card{
+   margin: 15px;
+   border: 1px solid rgb(208, 202, 202);
+   display: block;
+   border-radius: 5px;
+}
+.card .card-body{
+    padding: 15px;
+}

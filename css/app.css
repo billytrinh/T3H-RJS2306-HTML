@@ -1,0 +1,20 @@
+h1{ /* selector */
+    color:red;
+}
+p{
+    color:#166975; /* mã hexa */
+    font-size: 16px ;/* pixel */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;/* 400-normal 700-bold*/
+    line-height: 1.5;
+    text-align: justify;/* left right center justify */
+    text-decoration: none;/* none underline line-through*/
+
+    width: 600px;
+}
+span{
+    text-decoration: line-through;
+    text-transform: none;/* uppercase lowercase capitalize*/
+
+    background-color: #ffe4c4;
+}
