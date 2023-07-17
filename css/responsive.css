@@ -1,0 +1,115 @@
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: green;
+}
+.box3{
+    background-color: orange;
+}
+.box4{
+    background-color: blue;
+}
+
+/* code responsive */
+*{
+   margin: 0;
+   padding: 0; 
+   /* box-sizing: content-box;/* total width = width + padding + border */
+   box-sizing: border-box; /* total width = width */
+}
+.block{
+    float:left;
+    width: 100%;;
+}
+.container{
+    float:none;
+    margin: 0 auto;
+    padding-left:15px;
+    padding-right:15px;
+}
+.box{
+    float: left;
+    width: 100%; 
+    padding-left:15px;
+    padding-right:15px;
+}
+.logo{
+    float: left;
+}
+.menu{
+    float: right;
+}
+.menu li{
+    float: left;
+    margin-right: 15px;
+    list-style-type: none;
+}
+.mobile-menu{
+    display: none;
+    float: right;
+    margin-top: -20px;
+}
+.box-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 575px) {
+    /* mobile */
+    .box{
+        flex: 100%;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .menu{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+}
+@media only screen and (min-width: 576px) {
+    /* small */
+    .container{
+        width: 540px;
+    }
+    .box{
+        /* width: 50%; */
+        flex: 50%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* medium */
+    .container{
+        width: 720px;
+    }
+    .box{
+        /* width: 33.33%; */
+        flex: 33.33%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    /* large */
+    .container{
+        width: 960px;
+    }
+    .box{
+        /* width: 25%; */
+        flex: 25%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    /*  extra large */
+    .container{
+        width: 1140px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    /*  extra extra large */
+    .container{
+        width: 1320px;
+    }
+}
