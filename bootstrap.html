@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Bootstrap</title>
+    <link rel="stylesheet" href="libs/bootstrap.5.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/demobootstrap.css"/>
+
+    <script type="text/javascript" src="libs/bootstrap.5.3/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <i class="icon-header bi bi-facebook"></i>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/demo.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/demo.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/demo.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="red col">Red</div>
+            <div class="green col">Green</div>
+            <div class="orange col">Orange</div>
+            <div class="blue col">Blue</div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="red col-8">Red</div>
+            <div class="green col-4">Green</div>
+            <div class="orange col-6">Orange</div>
+            <div class="blue col-6">Blue</div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="blue col">Blue</div>
+            <div class="red col-3">Red (3/12)</div>
+            <div class="green col-4">Green (4/12)</div>
+            <div class="orange col-2">Orange (2/12)</div>
+            <div class="red col">Red</div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="blue col-3 col-md-4 col-lg-3">Blue</div>
+            <div class="red col-3 col-md-4 col-lg-3">Red</div>
+            <div class="green col-4 col-md-4 col-lg-3">Green</div>
+            <div class="orange col-2 col-md-6 col-lg-3">Orange</div>
+        </div>
+    </div>
+    <div class="container">
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Telephone</th>
+                <th>Address</th>
+            </thead>
+            <tbody>
+                <tr class="table-primary">
+                    <td>#1</td>
+                    <td>Vũ Tuấn Anh</td>
+                    <td>0987654321</td>
+                    <td>Ha Noi</td>
+                </tr>
+                <tr>
+                    <td>#1</td>
+                    <td>Vũ Tuấn Anh</td>
+                    <td>0987654321</td>
+                    <td>Ha Noi</td>
+                </tr>
+                <tr>
+                    <td>#1</td>
+                    <td>Vũ Tuấn Anh</td>
+                    <td>0987654321</td>
+                    <td>Ha Noi</td>
+                </tr>
+                <tr>
+                    <td>#1</td>
+                    <td>Vũ Tuấn Anh</td>
+                    <td>0987654321</td>
+                    <td>Ha Noi</td>
+                </tr>
+                <tr>
+                    <td>#1</td>
+                    <td>Vũ Tuấn Anh</td>
+                    <td>0987654321</td>
+                    <td>Ha Noi</td>
+                </tr>
+                <tr>
+                    <td>#1</td>
+                    <td>Vũ Tuấn Anh</td>
+                    <td>0987654321</td>
+                    <td>Ha Noi</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+         <form action="#" method="get">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+         </form>   
+    </div>
+</body>
+</html>
