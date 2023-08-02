@@ -69,3 +69,11 @@ var ran = parseInt(Math.random()*100);
 // nhập vào giá trị % lãi suất theo năm của ngân hàng
 // nhập vào số năm muốn gửi.
 // Thông báo tổng số tiền cuối cùng nhận được ( Lãi cộng dồn)
+
+// Variable - datatype
+// Condition 
+// Loop
+// Array
+// Function
+
+
