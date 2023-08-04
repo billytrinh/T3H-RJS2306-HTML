@@ -35,8 +35,8 @@ var ran = parseInt(Math.random()*100);
    // console.log(i);
   //  i++ // i = i+1; // i =0; (i++)/7  ++i/7
   // i-- // i = i - 1;
-    var kq = prompt("Chọn 1 số từ 0 -> 100");
-    kq = parseInt(kq);
+    // var kq = prompt("Chọn 1 số từ 0 -> 100");
+    // kq = parseInt(kq);
 
    // if(kq >=0 && kq <=100){ // kết hợp điều kiện: && ||
         
@@ -44,16 +44,16 @@ var ran = parseInt(Math.random()*100);
         
    // }
    // bắt nhập đi nhập lại đến khi nào được giá trị đúng thì thôi
-    for( ;kq <0 || kq >100 ; ){
-        kq = prompt("Chọn 1 số từ 0 -> 100");
-        kq = parseInt(kq);
-    }
-    if(kq == ran){ // == !=  > < >= <=
-        alert("Chúc mừng bạn đã trúng giải!");
-        break;
-    }else{
-        alert("Chúc bạn may mắn lần sau!");
-    }
+    // for( ;kq <0 || kq >100 ; ){
+        // kq = prompt("Chọn 1 số từ 0 -> 100");
+        // kq = parseInt(kq);
+    // }
+    // if(kq == ran){ // == !=  > < >= <=
+        // alert("Chúc mừng bạn đã trúng giải!");
+        // break;
+    // }else{
+        // alert("Chúc bạn may mắn lần sau!");
+    // }
  }
 
 // Sử dụng LOOP để viết chương trình nhập vào 10 số ngẫu nhiên
@@ -69,8 +69,30 @@ var ran = parseInt(Math.random()*100);
 // nhập vào giá trị % lãi suất theo năm của ngân hàng
 // nhập vào số năm muốn gửi.
 // Thông báo tổng số tiền cuối cùng nhận được ( Lãi cộng dồn)
+do{
+  var m = prompt("Nhập số tiền muốn gửi:"); // string
+  m = parseFloat(m);
+}while(m<=0);
 
-// Variable - datatype
+do{
+  var ls =prompt("Nhập lãi suất hàng năm:"); // string
+  ls = parseFloat(ls);
+}while(ls <=0);
+
+do{
+  var year = prompt("Nhập số năm muốn gửi:");// string
+  year = parseInt(year);
+}while(year <=0);
+
+
+for(var i=0;i<year;i++){
+    var lai = m * ls/100;
+    m = m + lai;
+}
+alert("Sau khi gửi xong sẽ nhận được "+m);
+
+
+// Variable - datatype (number string boolean)
 // Condition 
 // Loop
 // Array
