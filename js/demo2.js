@@ -69,3 +69,11 @@ if(check == false){
     alert("Chuc ban may man lan sau");
 }
 
+// VIETLOT
+// người chơi sẽ mua 5 số khác nhau từ 0 -> 45
+// hệ thống sẽ ngẫu nhiên sinh ra 5 số khác nhau từ 0 -> 45
+// Đối chiếu 5 số người chơi chọn với bộ 5 số ngẫu nhiên kia
+// Không nhất thiết phải đúng thứ tự
+// Nếu trùng 3/5 số: 10 Triệu
+// Nếu trùng 4/5 số: 100 triệu
+// Trung 5/5 số: Jackpot
