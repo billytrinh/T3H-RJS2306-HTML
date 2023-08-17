@@ -61,3 +61,8 @@ function timerCountDown(){
         }
     },1000);
 }
+// với bài xoay tròn lúc nãy
+// làm sao để xoay tròn mãi mãi 
+// và mượt
+
+// quat: 1 - quay nhej, 2- nhanh hơn  3- nhanh 
