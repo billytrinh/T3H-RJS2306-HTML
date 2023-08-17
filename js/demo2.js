@@ -69,7 +69,7 @@ if(check == false){
     alert("Chuc ban may man lan sau");
 }
 
-// VIETLOT
+// VIETLOT  1 2 3 4 5  --- 5 1 2 3 4
 // người chơi sẽ mua 5 số khác nhau từ 0 -> 45
 // hệ thống sẽ ngẫu nhiên sinh ra 5 số khác nhau từ 0 -> 45
 // Đối chiếu 5 số người chơi chọn với bộ 5 số ngẫu nhiên kia
@@ -77,3 +77,40 @@ if(check == false){
 // Nếu trùng 3/5 số: 10 Triệu
 // Nếu trùng 4/5 số: 100 triệu
 // Trung 5/5 số: Jackpot
+var chooses = [];// mang 5 so khac nhau nguoi choi lua chon
+var randoms = [];// mang 5 so khac nhau ngau nhien
+
+// nhap 5 so khac nhau trong khoang [0,45]
+while(chooses.length<5){
+    // nhap 1 so tu 0 -> 45
+    var c = prompt("Nhập 1 số từ 0->45:"); //5 => "5"
+    c = parseInt(c);//5 + 1 => 6   "5"+1 => "51"
+    if(c>=0 && c<=45){ // 0 <=c<=45
+        chooses.push(c);
+    }
+}
+// tao ngau nhien 5 so khac nhau trong khoan [0,45]
+while(randoms.length<5){
+    var r = Math.random()*46;// sinh ra 1 so thuc 34.523434
+    r = parseInt(r);// 34
+    // if(r>=0&&r<=45){
+        randoms.push(r);
+    // }
+}
+// So sanh 2 bộ số
+var count_lucky = 0;// đếm số trùng trong giải thưởng
+// 12 33 41 9 22
+for(var i=0;i<chooses.length;i++){
+    if(randoms.includes(chooses[i])){
+        count_lucky++;
+    }
+}
+if(count_lucky==3){
+    alert("Chúc mừng bạn đã trúng 10 triệu");
+}else if(count_lucky==4){
+    alert("Chúc mừng bạn đã trúng 100 triệu");
+}else if(count_lucky==5){
+    alert("Chúc mừng bạn đã trúng Jackpot");
+}else{
+    alert("Chúc bạn may mắn lần sau");
+}
