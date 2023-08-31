@@ -1,0 +1,25 @@
+body{
+    background-image: url("./../images/bg.jpeg");
+    background-size: cover;
+}
+#list .card{
+    background-color: #00000070;
+    height: 160px;
+    padding: 20px;
+}
+#list .card h4{
+    color: #fff;
+    font-size: 18px;
+}
+#list .card h3{
+    color: #fff;
+    font-size: 30px;
+}
+#list .card p{
+    color: #fff;
+    font-size: 16px;
+}
+#list .card img{
+    width: 100px;
+    transform: translate(180px,-100px);
+}
