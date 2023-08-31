@@ -6,7 +6,7 @@
 // data = JSON.parse(data);
 
 // call api  
-var url = `https://api.openweathermap.org/data/2.5/weather?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric`;
+var url = `https://api.openweathermap.org/data/2.5/weather?q=saigon&appid=09a71427c59d38d6a34f89b47d75975c&units=metric`;
 fetch(url) // call api
 .then(data=>data.json()) // b1 - chuyển nó về  object (object json) trong js 
 .then(   // b2 - lấy ra đúng các thông tin bên trong cần sử dụng

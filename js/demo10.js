@@ -1,4 +1,8 @@
 var url = `https://api.openweathermap.org/data/2.5/forecast?q=hanoi&appid=09a71427c59d38d6a34f89b47d75975c&units=metric`;
+// https:// | http://  - proxy
+// api.openweathermap.org  --- domain
+// /data/2.5/forecast   --- path string (route)
+// ?q=...&appid=... - ---  parameters - tham số.( giups truyền đạt mong muốn của người dùng lên api)
 fetch(url)
 .then(data=>data.json())
 .then(data=>{
