@@ -7,6 +7,8 @@ fetch(url)
 .then(data=>data.json())
 .then(data=>{
     var list = data.list;
+    var ls = document.getElementById("list");
+    ls.innerHTML = "";
     for(var i=0;i<list.length;i++){
         var icon = list[i].weather[0].icon;
         var desc = list[i].weather[0].description;
@@ -18,7 +20,7 @@ fetch(url)
                         <img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>
                     </div>
                 </div>`;
-        var ls = document.getElementById("list");
+        
         ls.innerHTML += item;         
     }
 });

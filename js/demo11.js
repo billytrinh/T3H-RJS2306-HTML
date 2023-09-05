@@ -60,3 +60,15 @@ function getNumber2(){
     console.log(v);  
 }
 // this -> đối tượng ngầm định bên trong
+// https://dummyjson.com/products/search?q=iphone
+
+function find(){
+    var s = document.getElementById("search");
+    var v = s.value;
+    getProducts(v);
+}
+
+function getProducts(q){
+    var url = `https://dummyjson.com/products/search?q=${q}`;
+    
+}
