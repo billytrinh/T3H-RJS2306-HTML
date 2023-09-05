@@ -9,6 +9,22 @@
 <body>
     <section>
         <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form onsubmit="find()" action="#" method="post">
+                        <div class="input-group mb-3 mt-5">
+                            <input type="text" id="txtcity" class="form-control" placeholder="city"/>
+                            <button class="btn btn-primary" type="submit">Find</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
             <img id="imgx" src="https://openweathermap.org/img/wn/02d@2x.png"/>
             <h1 id="city">Hà nội, VN</h1>
             <h2>Nhiệt độ: <span id="temp">30</span><sup>o</sup>C</h2>
