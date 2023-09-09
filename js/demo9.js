@@ -30,13 +30,25 @@ var cart = storage;
 document.getElementById("cart_number").innerText = cart.length;
 
 function addToCart(id){
-    // dùng id để call api lấy chi tiết sản phẩm
-    var url = `https://dummyjson.com/products/${id}`;
-    fetch(url).then(data=>data.json())
-    .then(data=>{
-        cart.push(data);
-        document.getElementById("cart_number").innerText = cart.length;
-        localStorage.setItem("cart",JSON.stringify(cart));
-    })
-    
+    // kiem tra id đã có trong cart chưa?
+    var check = false;
+    for(var i=0;i<cart.length;i++){
+        if(cart[i].id == id){
+            check = true;
+            cart[i].buy_qty = cart[i].buy_qty +1;
+            localStorage.setItem("cart",JSON.stringify(cart));
+            break;
+        }
+    }
+    if(check == false){
+        // dùng id để call api lấy chi tiết sản phẩm
+        var url = `https://dummyjson.com/products/${id}`;
+        fetch(url).then(data=>data.json())
+        .then(data=>{
+            data.buy_qty = 1;
+            cart.push(data);
+            document.getElementById("cart_number").innerText = cart.length;
+            localStorage.setItem("cart",JSON.stringify(cart));
+        })
+    }
 }
