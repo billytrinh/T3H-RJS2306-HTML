@@ -11,7 +11,7 @@ fetch(url)
                     <h5 class="card-title">${products[i].title}</h5>
                     <p class="card-text">${products[i].description}</p>
                     <p>${products[i].price}</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <button onclick="addToCart(${products[i].id})" class="btn btn-primary">Add to cart</button>
                     </div>
                 </div>
             </div>`;
@@ -19,3 +19,18 @@ fetch(url)
         list.innerHTML = list.innerHTML + item;    
     }
 })
+// localstorage -> bộ nhớ của trình duyệt dành cho mỗi website
+var storage = localStorage.getItem("cart");
+if(storage == null){
+    storage = [];
+}else{
+    storage = JSON.parse(storage);
+}
+var cart = storage;
+document.getElementById("cart_number").innerText = cart.length;
+
+function addToCart(id){
+    cart.push(id);
+    document.getElementById("cart_number").innerText = cart.length;
+    localStorage.setItem("cart",JSON.stringify(cart));
+}
