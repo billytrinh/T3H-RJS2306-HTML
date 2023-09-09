@@ -11,7 +11,7 @@ function cart(){
     var grand_total = 0;
     for(var i=0;i<cart.length;i++){
         var item = `<tr>
-                        <td><a href="#">X</a></td>
+                        <td><a onclick="removeItem(${i})" href="#">X</a></td>
                         <td><img src="${cart[i].thumbnail}" width="100" class="img-thumbnail"/></td>
                         <td>${cart[i].title}</td>
                         <td>${cart[i].price}</td>
@@ -24,3 +24,11 @@ function cart(){
     document.getElementById("grand_total").innerText = grand_total;
 }
 cart();
+function removeItem(vt){
+    // remove cart[i]
+    localStorage.setItem("cart",JSON.stringify(cart));
+}
+function clean(){
+    cart = [];
+    localStorage.setItem("cart",JSON.stringify(cart));
+}
