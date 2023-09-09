@@ -30,7 +30,13 @@ var cart = storage;
 document.getElementById("cart_number").innerText = cart.length;
 
 function addToCart(id){
-    cart.push(id);
-    document.getElementById("cart_number").innerText = cart.length;
-    localStorage.setItem("cart",JSON.stringify(cart));
+    // dùng id để call api lấy chi tiết sản phẩm
+    var url = `https://dummyjson.com/products/${id}`;
+    fetch(url).then(data=>data.json())
+    .then(data=>{
+        cart.push(data);
+        document.getElementById("cart_number").innerText = cart.length;
+        localStorage.setItem("cart",JSON.stringify(cart));
+    })
+    
 }
